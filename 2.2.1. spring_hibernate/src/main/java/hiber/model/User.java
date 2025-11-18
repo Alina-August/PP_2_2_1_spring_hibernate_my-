@@ -31,6 +31,16 @@ public class User {
       this.email = email;
       this.car = car;
    }
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", email='" + email + '\'' +
+                ", car=" + (car != null ? car.getModel() + " " + car.getSeries() : "null") +
+                '}';
+    }
 
    public Long getId() {
       return id;

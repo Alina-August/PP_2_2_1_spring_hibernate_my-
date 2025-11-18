@@ -33,7 +33,11 @@ public class MainApp {
          System.out.println("Last Name = "+user.getLastName());
          System.out.println("Email = "+user.getEmail());
          System.out.println();
+
       }
+      System.out.println("Поиск юзера по машине");
+      User foundUser = userService.getUserByCar("BMW", 5);
+      System.out.println(foundUser);
 
       context.close();
    }
